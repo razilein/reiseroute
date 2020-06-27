@@ -20,11 +20,16 @@ Die Berechnung der Distanz selbst zu programmieren, wäre sicherlich einfacher u
 Ich fand es jedoch eine interessante Idee eine andere Seite die dies bereits kann anzusteuern.
 
 ## Anleitung zum Starten der Anwendung
-Das Programm muss heruntergeladen und abgelegt werden.
+Das Programm muss heruntergeladen, abgelegt und als `reiseroute` entpackt werden.
 
 Anschließend muss in der Konsole in das Verzeichnis `reiseroute` navigiert und folgender Befehl ausgeführt werden:
+(JDK muss installiert und Umgebungsvariable `JAVA_HOME` gesetzt sein)
 
+Linux:
 `./mvnw clean install -DskipTests spring-boot:repackage`
+
+Windows:
+`mvnw clean install -DskipTests spring-boot:repackage`
 
 Nachdem der Befehl ausgeführt wurde, befindet sich unter dem Verzeichnis `reseroute/target` die Datei
 `reiseroute-1.0.0-spring-boot.jar`.
